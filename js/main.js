@@ -214,7 +214,7 @@ $(document).ready(function () {
         navigateTo(startPath);
     }
 
-    var filesBaseUrl = "/files";
+    var filesBaseUrl = "../Arquivos";
     var isNavigating = false;
     var fileListElement = $("#file-list");
     var fileItemElementTemplate = fileListElement.find("li").detach();
