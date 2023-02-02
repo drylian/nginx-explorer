@@ -163,7 +163,7 @@ $(document).ready(function () {
                     });
 
                 console.log("replaceState", path);
-                history.replaceState(null, path, 'Container' + path);
+                history.replaceState(null, path + path); <!-- Valor antigo //                history.replaceState(null, path, '#' + path) ;-->
 
 
                 isNavigating = false;
