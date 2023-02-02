@@ -163,7 +163,7 @@ $(document).ready(function () {
                     });
 
                 console.log("replaceState", path);
-                history.replaceState(null, path, '#' + path);
+                history.replaceState(null, path, 'Container' + path);
 
 
                 isNavigating = false;
