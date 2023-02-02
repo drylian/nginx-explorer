@@ -173,20 +173,20 @@ $(document).ready(function () {
                 console.log(jqxhr, textStatus, errorThrown);
 
                 if(textStatus === "timeout") {
-                    alert("Request to server timed out, retry later!");
+                    alert("A solicitação ao servidor expirou, tente novamente mais tarde!");
 
                 } else if(textStatus === "abort") {
-                    alert("Connection to server has been aborted, retry later!");
+                    alert("A conexão com o servidor foi interrompida, tente novamente mais tarde!");
 
                 } else if(textStatus === "parsererror") {
-                    alert("Invalid response from server!");
+                    alert("Resposta inválida do servidor!");
 
                 } else if(jqxhr.status === 404) {
-                    alert("Server cant find this file/directory!");
+                    alert("O servidor não consegue encontrar este arquivo/diretório!");
 
                 } else {
                     // also if(textStatus === "error")
-                    alert("Something went wrong in communication to server, retry later!");
+                    alert("Algo deu errado na comunicação com o servidor, tente novamente mais tarde!");
                 }
 
                 history.back();
